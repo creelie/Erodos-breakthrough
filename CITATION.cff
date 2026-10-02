@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Wieferich Primes in Ordowski's Congruences"
+authors:
+  - given-names: Deep
+    alias: creelie
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/creelie/Erodos-breakthrough"
+version: "1.0.0"
+date-released: "2026-10-02"
+keywords:
+  - number theory
+  - Wieferich prime
+  - OEIS A051903
+  - Lean 4
+  - formal verification

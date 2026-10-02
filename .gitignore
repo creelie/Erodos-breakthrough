@@ -1,0 +1,11 @@
+.lake
+build/
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+search/wief
+search/least
+search/least2

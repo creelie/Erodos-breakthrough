@@ -1,0 +1,21 @@
+name: Lean
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          use-mathlib-cache: true
+          build: true
+      - name: Check axioms
+        run: |
+          printf 'import ErdosProofs\n#print axioms OeisA51903.conjecture2\n#print axioms OeisA51903.conjecture3\n#print axioms OeisA51903.base_two_wieferich\n#print axioms OeisA51903.prime_factor_mod_eight\n' > axioms.lean
+          lake env lean axioms.lean | tee axioms.txt
+          ! grep -E 'sorryAx|ofReduceBool|trustCompiler' axioms.txt

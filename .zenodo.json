@@ -1,0 +1,9 @@
+{
+  "title": "Wieferich Primes in Ordowski's Congruences",
+  "description": "Answers to Thomas Ordowski's questions on OEIS A051903. No odd n with a repeated prime factor satisfies b^n = b^a(n) (mod n) for every base b, while for the base 2 such n exist; the least is 9687963167864344937 = 7 * 631 * 881 * 3511^2 * 201961. Includes the paper, Lean 4 proofs checked against the Formal Conjectures statements, and the search code.",
+  "upload_type": "software",
+  "creators": [{"name": "Deep"}],
+  "license": "Apache-2.0",
+  "keywords": ["number theory", "Wieferich prime", "OEIS A051903", "Lean 4", "formal verification"],
+  "version": "1.0.0"
+}
